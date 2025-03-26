@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   TextField,
   Button,
@@ -93,8 +93,8 @@ const UploadVideo = () => {
   return (
     <Box sx={{ maxWidth: 900, mx: "auto", mt: 5 }}>
       <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
-        <Typography variant="h4" gutterBottom align="center">
-          Upload Video
+        <Typography variant="h5" gutterBottom align="center" sx={{ color: "#012b11", marginBottom: 5, fontWeight: "600"}}>
+          Content Upload
         </Typography>
         <Grid container spacing={3}>
           {/* Left Side Form */}
@@ -182,9 +182,9 @@ const UploadVideo = () => {
               fullWidth
               onClick={handleUpload}
               disabled={uploading}
-              sx={{ mt: 3 }}
+              sx={{ mt: 3, background: "gold", color: "#012b11", fontWeight: "600", borderRadius: 3, padding: 2 }}
             >
-              {uploading ? <CircularProgress size={24} /> : "Upload Video"}
+              {uploading ? <CircularProgress size={24} /> : "Upload Content"}
             </Button>
           </Grid>
         </Grid>

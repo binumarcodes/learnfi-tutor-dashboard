@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 } */
+
+
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/lora/400.css";
+
+/* Apply fonts to the body */
+body {
+  font-family: "Lora", "Poppins", sans-serif;
+}
+
+/* Example usage */
+h1, h2, h3 {
+  font-family: "Lora", serif;
+}

@@ -1,15 +1,18 @@
-import './App.css'
-import Dashboard from './page/Dashboard'
-import UploadVideo from './page/UploadVideo'
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Dashboard from "./page/Dashboard";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Quicksand, sans-serif"
+  },
+});
 
 function App() {
-
   return (
-    <>
-    <Dashboard />
-        {/* <UploadVideo /> */}
-    </>
-  )
+    <ThemeProvider theme={theme}>
+      <Dashboard />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
